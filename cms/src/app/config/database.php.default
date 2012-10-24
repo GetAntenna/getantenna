@@ -74,17 +74,16 @@
 class DATABASE_CONFIG {
 
 	var $default = array(
-		'driver' => 'mysqli',
-		'persistent' => true,
+		'driver' => 'mysql',
+		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '4jemyr8',
-		'database' => 'antenna',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'prefix' => '',
-		'encoding' => 'utf8',
 	);
 
-	/*var $test = array(
+	var $test = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -92,5 +91,5 @@ class DATABASE_CONFIG {
 		'password' => 'password',
 		'database' => 'test_database_name',
 		'prefix' => '',
-	);*/
+	);
 }
