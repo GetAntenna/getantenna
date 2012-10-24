@@ -32,34 +32,40 @@
 				// Save the mobile subscribers numbers
 				$statsMobile = $this->Extra->findByOption('STATS_MOBILE');
 				$this->Extra->id = $statsMobile['Extra']['id'];
+				$this->Extra->set('option', 'STATS_MOBILE');
 				$this->Extra->set('value', $this->data['Extra']['mobile']);
 				$this->Extra->save();
 
 				// Save the newsletter subscribers numbers
 				$statsNewsletter = $this->Extra->findByOption('STATS_NEWSLETTER');
 				$this->Extra->id = $statsNewsletter['Extra']['id'];
+				$this->Extra->set('option', 'STATS_NEWSLETTER');
 				$this->Extra->set('value', $this->data['Extra']['newsletter']);
 				$this->Extra->save();
 
 				// Save the facebook subscribers numbers
 				$statsFacebook = $this->Extra->findByOption('STATS_FACEBOOK');
 				$this->Extra->id = $statsFacebook['Extra']['id'];
+				$this->Extra->set('option', 'STATS_FACEBOOK');
 				$this->Extra->set('value', $this->data['Extra']['facebook']);
 				$this->Extra->save();
 
 				// Save the intro and the outro
 				$aboutIntro = $this->Extra->findByOption('ABOUT_INTRO');
 				$this->Extra->id = $aboutIntro['Extra']['id'];
+				$this->Extra->set('option', 'ABOUT_INTRO');
 				$this->Extra->set('value', $this->data['Extra']['intro']);
 				$this->Extra->save();
 				$aboutOutro = $this->Extra->findByOption('ABOUT_OUTRO');
 				$this->Extra->id = $aboutOutro['Extra']['id'];
+				$this->Extra->set('option', 'ABOUT_OUTRO');
 				$this->Extra->set('value', $this->data['Extra']['outro']);
 				$this->Extra->save();
 
 				// Save the sponsor
 				$aboutSponsor = $this->Extra->findByOption('ABOUT_SPONSOR');
 				$this->Extra->id = $aboutSponsor['Extra']['id'];
+				$this->Extra->set('option', 'ABOUT_SPONSOR');
 				$this->Extra->set('value', $this->data['Extra']['sponsor']);
 				$this->Extra->save();
 
@@ -84,18 +90,22 @@
 							// Save the banner information
 							$bannerName = $this->Extra->findByOption('BANNER_NAME');
 							$this->Extra->id = $bannerName['Extra']['id'];
+							$this->Extra->set('option', 'BANNER_NAME');
 							$this->Extra->set('value', $filename);
 							$this->Extra->save();
 							$bannerType = $this->Extra->findByOption('BANNER_TYPE');
 							$this->Extra->id = $bannerType['Extra']['id'];
+							$this->Extra->set('option', 'BANNER_TYPE');
 							$this->Extra->set('value', $filetype);
 							$this->Extra->save();
 							$bannerSize = $this->Extra->findByOption('BANNER_SIZE');
 							$this->Extra->id = $bannerSize['Extra']['id'];
+							$this->Extra->set('option', 'BANNER_SIZE');
 							$this->Extra->set('value', $filesize);
 							$this->Extra->save();
 							$bannerData = $this->Extra->findByOption('BANNER_DATA');
 							$this->Extra->id = $bannerData['Extra']['id'];
+							$this->Extra->set('option', 'BANNER_DATA');
 							$this->Extra->set('value', $filedata);
 							$this->Extra->save();
 						}
