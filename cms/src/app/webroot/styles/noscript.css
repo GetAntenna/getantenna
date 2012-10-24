@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+
+
+	/*
+	========================================================================
+		Remove all structural elements
+	========================================================================
+	*/
+
+	#metaNavigationWrapper, #applicationWrapper { display: none; }
+	noscript + div { display: none; }
+
+
+
+
+
+	/*
+	========================================================================
+		Specific instructions
+	========================================================================
+	*/
+
+	.standaloneWindow { border-color: #fae04e; }
+	.standaloneWindow .windowContent
+	{
+		border: 1px solid #fae04e;
+		background-color: #ffd;
+		padding: 20px;
+	}
+	.standaloneWindow .windowContent p 
+	{
+		color: #505050; 
+		margin-bottom: 8px; 
+	}

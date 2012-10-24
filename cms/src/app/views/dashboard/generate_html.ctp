@@ -1,0 +1,1 @@
+<textarea style="width: 914px; height: 440px;"><?php echo $htmlCode; ?></textarea>

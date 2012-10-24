@@ -1,0 +1,38 @@
+@charset "utf-8";
+	/*
+	************************************************************************
+
+	TinyMCE stylesheet
+		Style sheet with css instructions for TinyMCE
+
+	@Homepage:		http://www.domain.com
+	@Author:			Fabrizio Menghini Calderón <fabrizio@internotredici.com>
+	@License:		Creative Commons Attribution-Noncommercial-Share Alike 
+						3.0 Unported License
+	@Copyright:		2009 (c) Interno Tredici. 
+						Some rights reserved.
+
+	************************************************************************
+	*/
+
+
+
+	body
+	{
+		background-color: #fff;
+		font-family: "Lucida Grande", "Segoe UI", "Segoe", "Tahoma", Arial, Sans-serif;
+		color: #414042;
+		text-shadow: 0 1px 1px rgba(230, 231, 232, .75);
+	}
+	html > body 
+	{ 
+		font-size: 14px;
+		line-height: 16px;
+	}
+	a 
+	{ 
+		color: #c20162; 
+		text-decoration: underline;
+	}
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	p { margin-bottom: 12px; }

@@ -1,0 +1,1 @@
+(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,command,datalist,details,dialog,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,ruby,rt,rp,section,source,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
